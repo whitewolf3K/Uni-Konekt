@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap">
+    <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8f9fc;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            font-weight: 600;
+            color: #555555;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            background-color: #f5f5f5;
+            color: #333333;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #message {
+            text-align: center;
+            color: #dc3545;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="form-group">
+            <label class="form-label" for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="form-group">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function login() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    // Example credentials (replace with your authentication logic)
+    var validUsername = "user";
+    var validPassword = "password";
+
+    if (username === validUsername && password === validPassword) {
+        // Successful login
+        document.getElementById('message').innerHTML = "Login successful!";
+        // Redirect to dashboard or desired page
+        window.location.href = "index.html"; // Uncomment this line to enable redirection
+    } else {
+        // Invalid credentials
+        document.getElementById('message').innerHTML = "Invalid username or password";
+    }
+}
+
+    </script>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+</html>
