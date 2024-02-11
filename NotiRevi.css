@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#sidebarToggle {
+    background-color: #4e73df;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #4e73df; /* Blue color */
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar-brand {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    padding-left: 20px;
+}
+
+.nav-link {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: #3563b6;
+}
+
+#content-wrapper {
+    width: calc(100% - 250px);
+    padding: 50px;
+}
+
+.navbar-top {
+    background-color: #4e73df; /* Blue color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+
+.author-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.author-description {
+    color: #777;
+    font-size: 14px;
+}

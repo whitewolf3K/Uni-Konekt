@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duty Leave Request</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    line-height: 1.6;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+  button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Duty Leave Request</h1>
+  
+  <div id="letterContent">
+    <p>Dear Principal,</p>
+    <p>I am writing to request a brief duty leave on <strong><span id="datePlaceholder">[Date]</span></strong> due to <strong><span id="reasonPlaceholder">[Reason]</span></strong>. I assure you that I will make up for any missed responsibilities during my absence.</p>
+    <p>Thank you for your consideration.</p>
+    <p>Sincerely,<br>
+      <input type="text" id="nameInput" placeholder="Your Name"><br>
+      <input type="text" id="positionInput" placeholder="Your Position/Role"><br>
+      <input type="text" id="dateInput" placeholder="Date"><br>
+      <input type="text" id="reasonInput" placeholder="Reason"><br>
+    </p>
+  </div>
+
+  <button onclick="updateValues()">Update</button>
+  <button onclick="submitForm()">Submit</button>
+</div>
+
+<script>
+  function updateValues() {
+    var name = document.getElementById("nameInput").value;
+    var position = document.getElementById("positionInput").value;
+    var date = document.getElementById("dateInput").value;
+    var reason = document.getElementById("reasonInput").value;
+
+    document.getElementById("datePlaceholder").innerText = date;
+    document.getElementById("reasonPlaceholder").innerText = reason;
+  }
+
+  function submitForm() {
+    // Add functionality to submit the form data
+    var name = document.getElementById("nameInput").value;
+    var position = document.getElementById("positionInput").value;
+    var date = document.getElementById("dateInput").value;
+    var reason = document.getElementById("reasonInput").value;
+
+    alert("Form submitted with following data:\nName: " + name + "\nPosition/Role: " + position + "\nDate: " + date + "\nReason: " + reason);
+  }
+</script>
+
+</body>
+</html>

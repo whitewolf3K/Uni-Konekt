@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #224abe;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set to the height of the viewport */
+}
+
+.main {
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #224abe;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #224abe;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    margin: 200px 125px; /* Center the .main div and add space around it */
+    padding: 100px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #224abe;
+}

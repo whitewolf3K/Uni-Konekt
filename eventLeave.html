@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Hosting Request</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    line-height: 1.6;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+  button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Event Hosting Request</h1>
+  
+  <div id="letterContent">
+    <p>Dear Principal,</p>
+    <p>I am writing to request your approval for hosting <strong><span id="eventNamePlaceholder">[Event Name]</span></strong> at our school. We believe this event will <strong><span id="eventExplanationPlaceholder">[Brief explanation of the event's purpose and benefits]</span></strong>.</p>
+    <p>Thank you for considering our request.</p>
+    <p>Sincerely,<br>
+      <input type="text" id="nameInput" placeholder="Your Name"><br>
+      <input type="text" id="positionInput" placeholder="Your Position/Role"><br>
+      <input type="text" id="dateInput" placeholder="Date"><br>
+      <input type="text" id="eventNameInput" placeholder="Event Name"><br>
+      <input type="text" id="eventExplanationInput" placeholder="Brief explanation of the event's purpose and benefits"><br>
+    </p>
+  </div>
+
+  <button onclick="updateValues()">Update</button>
+  <button onclick="submitForm()">Submit</button>
+</div>
+
+<script>
+  function updateValues() {
+    var name = document.getElementById("nameInput").value;
+    var position = document.getElementById("positionInput").value;
+    var date = document.getElementById("dateInput").value;
+    var eventName = document.getElementById("eventNameInput").value;
+    var eventExplanation = document.getElementById("eventExplanationInput").value;
+
+    document.getElementById("eventNamePlaceholder").innerText = eventName;
+    document.getElementById("eventExplanationPlaceholder").innerText = eventExplanation;
+  }
+
+  function submitForm() {
+    // Add functionality to submit the form data
+    var name = document.getElementById("nameInput").value;
+    var position = document.getElementById("positionInput").value;
+    var date = document.getElementById("dateInput").value;
+    var eventName = document.getElementById("eventNameInput").value;
+    var eventExplanation = document.getElementById("eventExplanationInput").value;
+
+    alert("Form submitted with following data:\nName: " + name + "\nPosition/Role: " + position + "\nDate: " + date + "\nEvent Name: " + eventName + "\nEvent Explanation: " + eventExplanation);
+  }
+</script>
+
+</body>
+</html>
